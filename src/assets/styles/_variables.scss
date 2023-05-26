@@ -1,9 +1,26 @@
 :root {
+    --mac-sky-blue: #71C5E8;
+    --mac-green: #00CA4E;
+    --mac-red: #FF605C;
+    --mac-gold: #FFBD44;
+    --mac-plum: #8A1B61;
+    --mac-blue: #009CDF;
     --mac-grey: #DDD;
     --light-0: #FFF;
+    --light-1: rgb(223, 225, 235);
+    --dark-1: rgb(32, 32, 32);
     --dark-0: #000;
     --purple-0: rgba(95, 1, 109, 0.5);
     --purple-1: rgba(78, 0, 88, 0.7);
+    --purple-2: rgb(95 1 109 / 50%);
+    --grey-0: #E5E1ED;
+    --grey-1: #A5A5A5;
+    --grey-2: rgb(229, 226, 239);
+    --grey-3: rgb(223, 225, 235);
+    --grey-4: #CDCCCC;
+    --grey-5: #DDD;
     --machine-cl: #2A2E3E;
-    --menu-bg: #131927;
+    --menu-bg: #222222;
+    --terminal-cl: #32F635;
+    --terminal-bg: #1E1E1E;
 }

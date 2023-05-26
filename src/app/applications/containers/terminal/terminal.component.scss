@@ -1,0 +1,22 @@
+@import "helpers";
+.dialog-header {
+    @include flex($ai: center, $jc: space-between);
+    background: rgb(53, 53, 53);
+    background: linear-gradient(180deg, rgba(53, 53, 53, 1) 0%, rgba(44, 44, 44, 1) 70%);
+    border-color: rgb(53, 53, 53);
+    &__controls {
+        padding: 0.5rem;
+    }
+    &__title {
+        @include flex($ai: center, $jc: center);
+        flex-grow: 1;
+        .font-bold {
+            color: var(--light-0);
+        }
+    }
+}
+
+::ng-deep.p-terminal {
+    background-color: var(--terminal-bg);
+    color: var(--terminal-cl);
+}
