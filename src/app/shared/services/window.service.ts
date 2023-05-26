@@ -30,6 +30,10 @@ export class WindowService {
     switch(applicationId) {
       case apps.TERMINAL: return appComponents.TerminalComponent;
 
+      case apps.FINDER: return appComponents.FinderComponent;
+
+      case apps.TRASH: return appComponents.TrashComponent;
+
       default: return null;
     }
   }

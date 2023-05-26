@@ -53,6 +53,22 @@ export class Store extends BaseStore {
       });
   });
 
+  trashFolders$: Observable<Folder[]> = this.select((state) => {
+    return state.folders
+      .filter(f => state.deletedFolterIds.includes(f.id));
+  });
+
+  testFolders$: Observable<Folder[]> = this.select((state) => {
+    return state.folders
+      .filter(f => f.parentFolderId === 2 && !state.deletedFolterIds.includes(f.id))
+      .map(f => {
+        return {
+          ...f,
+          selected: state.selectedFolderIds.includes(f.id)
+        }
+      });
+  });
+
   activeApplication$: Observable<string> = this.select((state) => {
     return state.activeApplications;
   });

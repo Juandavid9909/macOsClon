@@ -11,6 +11,11 @@ import { TerminalComponent } from './containers/terminal/terminal.component';
 import { DialogControlsComponent } from './components/dialog-controls/dialog-controls.component';
 import { FoldersComponent } from './containers/folders/folders.component';
 import { FolderIconComponent } from './components/folder-icon/folder-icon.component';
+import { FinderComponent } from './containers/finder/finder.component';
+import { TrashComponent } from './containers/trash/trash.component';
+import { FinderSidebarComponent } from './components/finder-sidebar/finder-sidebar.component';
+import { SidebarGroupComponent } from './components/sidebar-group/sidebar-group.component';
+import { SidebarItemComponent } from './components/sidebar-item/sidebar-item.component';
 
 const components = [
   DesktopComponent,
@@ -20,7 +25,12 @@ const components = [
   TerminalComponent,
   DialogControlsComponent,
   FoldersComponent,
-  FolderIconComponent
+  FolderIconComponent,
+  FinderComponent,
+  TrashComponent,
+  FinderSidebarComponent,
+  SidebarGroupComponent,
+  SidebarItemComponent
 ];
 
 @NgModule({
