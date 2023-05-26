@@ -1,3 +1,4 @@
+@import "helpers";
 .p-terminal {
     border: 0;
 }
@@ -9,5 +10,16 @@
         border-radius: 0.5rem;
         padding: 0;
         background: rgba(30, 30, 30, 1);
+    }
+}
+
+.context-menu {
+    @include font($size: 0.8rem, $weight: 500);
+    background: rgba(30, 30, 30, 1);
+    .p-menuitem-link:hover {
+        background: var(--mac-blue) !important;
+        .p-menuitem-text {
+            color: var(--light-0) !important;
+        }
     }
 }

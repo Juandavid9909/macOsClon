@@ -99,4 +99,20 @@ export class Store extends BaseStore {
       ]
     });
   }
+
+  addNewFolder() {
+    const miliseconds = new Date().getTime();
+    const newFolder: Folder = {
+      id: miliseconds,
+      title: `${ miliseconds }`,
+      parentFolderId: 0
+    }
+
+    this.setState({
+      folders: [
+        ...this.state.folders,
+        newFolder
+      ]
+    });
+  }
 }

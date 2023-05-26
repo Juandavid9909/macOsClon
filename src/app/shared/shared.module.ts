@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { DialogService, DynamicDialogConfig, DynamicDialogRef } from "primeng/dynamicdialog";
 import { SharedUiModule } from '../shared-ui/shared-ui.module';
 import { ClockComponent } from './components/clock/clock.component';
+import { ContextMenuComponent } from './components/context-menu/context-menu.component';
 
 @NgModule({
   declarations: [
-    ClockComponent
+    ClockComponent,
+    ContextMenuComponent
   ],
   imports: [
     CommonModule,
@@ -14,7 +16,8 @@ import { ClockComponent } from './components/clock/clock.component';
   ],
   exports: [
     ClockComponent,
-    SharedUiModule
+    SharedUiModule,
+    ContextMenuComponent
   ],
   providers: [
     DialogService,
