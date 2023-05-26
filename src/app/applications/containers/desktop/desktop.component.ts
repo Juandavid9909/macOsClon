@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./desktop.component.scss']
 })
 export class DesktopComponent {
-
+  launchPadOpened = false;
 }

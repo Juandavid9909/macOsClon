@@ -6,11 +6,13 @@ import { DesktopComponent } from './containers';
 import { DockComponent } from './components';
 import { SharedModule } from '../shared/shared.module';
 import { MenuComponent } from './components/menu/menu.component';
+import { LaunchpadComponent } from './containers/launchpad/launchpad.component';
 
 const components = [
   DesktopComponent,
   DockComponent,
-  MenuComponent
+  MenuComponent,
+  LaunchpadComponent
 ];
 
 @NgModule({

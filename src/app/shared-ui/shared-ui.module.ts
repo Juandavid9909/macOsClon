@@ -4,6 +4,7 @@ import { DockModule } from "primeng/dock";
 import { InputTextModule } from "primeng/inputtext";
 import { MenubarModule } from "primeng/menubar";
 import { ProgressBarModule } from "primeng/progressbar";
+import { SidebarModule } from "primeng/sidebar";
 
 @NgModule({
   declarations: [],
@@ -14,7 +15,8 @@ import { ProgressBarModule } from "primeng/progressbar";
     ProgressBarModule,
     InputTextModule,
     DockModule,
-    MenubarModule
+    MenubarModule,
+    SidebarModule
   ]
 })
 export class SharedUiModule { }
