@@ -32,6 +32,11 @@
                 border: none;
             }
         }
+        .p-input-icon-right {
+            .iconRight {
+                margin-top: auto;
+            }
+        }
     }
     &_password-hint {
         font-size: 0.8rem;

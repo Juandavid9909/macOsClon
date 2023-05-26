@@ -5,7 +5,7 @@
 
     <div class="login-screen__input">
         <div class="p-input-icon-right">
-            <i class="pi pi-arrow-circle-right" *ngIf="password.value"></i>
+            <i class="pi pi-arrow-circle-right iconRight" *ngIf="password.value"></i>
 
             <input #password (keyup.enter)="openDesktop()" autofocus pInputText autocomplete="off" class="p-inputtext-sm" placeholder="Enter password" type="password" />
         </div>
