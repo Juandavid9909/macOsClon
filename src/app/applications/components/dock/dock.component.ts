@@ -3,6 +3,7 @@ import { dockItems } from 'src/app/shared/config/dock-items';
 import { MenuItem } from "primeng/api";
 import { TooltipOptions } from "primeng/tooltip";
 import { LAUNCHPAD } from 'src/app/shared/config/applications';
+import { Store } from 'src/app/shared/store/store';
 
 @Component({
   selector: 'app-dock',
@@ -23,7 +24,7 @@ export class DockComponent implements OnInit {
     showDelay: 1000
   };
 
-  constructor() {}
+  constructor(private store: Store) {}
 
   ngOnInit() {
     this.dockItems = this.getDockItems();
@@ -42,6 +43,8 @@ export class DockComponent implements OnInit {
           if(dockItem === LAUNCHPAD) {
             this.launchpadOpened.emit();
           }
+
+          this.store.setActiveApplication(dockItem);
         }
       };
     });

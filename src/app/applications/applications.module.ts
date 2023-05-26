@@ -7,12 +7,14 @@ import { DockComponent } from './components';
 import { SharedModule } from '../shared/shared.module';
 import { MenuComponent } from './components/menu/menu.component';
 import { LaunchpadComponent } from './containers/launchpad/launchpad.component';
+import { TerminalComponent } from './containers/terminal/terminal.component';
 
 const components = [
   DesktopComponent,
   DockComponent,
   MenuComponent,
-  LaunchpadComponent
+  LaunchpadComponent,
+  TerminalComponent
 ];
 
 @NgModule({
