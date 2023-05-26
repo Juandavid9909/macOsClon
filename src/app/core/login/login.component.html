@@ -7,7 +7,7 @@
         <div class="p-input-icon-right">
             <i class="pi pi-arrow-circle-right" *ngIf="password.value"></i>
 
-            <input #password autofocus pInputText autocomplete="off" class="p-inputtext-sm" placeholder="Enter password" type="password" />
+            <input #password (keyup.enter)="openDesktop()" autofocus pInputText autocomplete="off" class="p-inputtext-sm" placeholder="Enter password" type="password" />
         </div>
     </div>
 

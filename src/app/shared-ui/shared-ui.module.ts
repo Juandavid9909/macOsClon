@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProgressBarModule } from "primeng/progressbar";
+import { DockModule } from "primeng/dock";
 import { InputTextModule } from "primeng/inputtext";
+import { ProgressBarModule } from "primeng/progressbar";
 
 @NgModule({
   declarations: [],
@@ -10,7 +11,8 @@ import { InputTextModule } from "primeng/inputtext";
   ],
   exports: [
     ProgressBarModule,
-    InputTextModule
+    InputTextModule,
+    DockModule
   ]
 })
 export class SharedUiModule { }
