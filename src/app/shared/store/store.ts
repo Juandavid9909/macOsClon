@@ -38,6 +38,10 @@ const initialState: State = {
 })
 export class Store extends BaseStore {
 
+  trashItemsCount$: Observable<number> = this.select((state) => {
+    return state.deletedFolterIds.length;
+  })
+
   desktopFolders$: Observable<Folder[]> = this.select((state) => {
     return state.folders
       .filter(f => f.parentFolderId === 0 && !state.deletedFolterIds.includes(f.id))
