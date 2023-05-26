@@ -1,8 +1,9 @@
 @import "helpers";
 :host::ng-deep {
-    .p-menubar {
+    .p-menubar,
+    .p-menubar-root-list {
         padding: 0 0.5rem;
-        background-color: var(--purple-1);
+        background-color: var(--menu-bg);
         color: var(--light-0);
         border: none;
         font-size: 0.8rem;
