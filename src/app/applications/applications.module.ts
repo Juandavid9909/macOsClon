@@ -9,6 +9,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { LaunchpadComponent } from './containers/launchpad/launchpad.component';
 import { TerminalComponent } from './containers/terminal/terminal.component';
 import { DialogControlsComponent } from './components/dialog-controls/dialog-controls.component';
+import { FoldersComponent } from './containers/folders/folders.component';
+import { FolderIconComponent } from './components/folder-icon/folder-icon.component';
 
 const components = [
   DesktopComponent,
@@ -16,7 +18,9 @@ const components = [
   MenuComponent,
   LaunchpadComponent,
   TerminalComponent,
-  DialogControlsComponent
+  DialogControlsComponent,
+  FoldersComponent,
+  FolderIconComponent
 ];
 
 @NgModule({
