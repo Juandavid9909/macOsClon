@@ -5,10 +5,12 @@ import { ApplicationsRoutingModule } from './applications-routing.module';
 import { DesktopComponent } from './containers';
 import { DockComponent } from './components';
 import { SharedModule } from '../shared/shared.module';
+import { MenuComponent } from './components/menu/menu.component';
 
 const components = [
   DesktopComponent,
-  DockComponent
+  DockComponent,
+  MenuComponent
 ];
 
 @NgModule({
