@@ -16,6 +16,7 @@ import { TrashComponent } from './containers/trash/trash.component';
 import { FinderSidebarComponent } from './components/finder-sidebar/finder-sidebar.component';
 import { SidebarGroupComponent } from './components/sidebar-group/sidebar-group.component';
 import { SidebarItemComponent } from './components/sidebar-item/sidebar-item.component';
+import { SpotlightComponent } from './containers/spotlight/spotlight.component';
 
 const components = [
   DesktopComponent,
@@ -30,7 +31,8 @@ const components = [
   TrashComponent,
   FinderSidebarComponent,
   SidebarGroupComponent,
-  SidebarItemComponent
+  SidebarItemComponent,
+  SpotlightComponent
 ];
 
 @NgModule({

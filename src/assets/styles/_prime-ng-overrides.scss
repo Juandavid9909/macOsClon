@@ -11,6 +11,12 @@
         padding: 0;
         background: rgba(30, 30, 30, 1);
     }
+    &.spotlight {
+        box-shadow: none;
+        .p-dialog-content {
+            background-color: transparent;
+        }
+    }
 }
 
 .context-menu {

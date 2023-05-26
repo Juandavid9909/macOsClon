@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,6 +7,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MenuComponent {
+
+  @Output() openSpotlightOpened = new EventEmitter();
+
   menuItems = [
     {
       label: "Finder",
@@ -31,4 +34,8 @@ export class MenuComponent {
       label: "Help"
     }
   ];
+
+  openSpotlight() {
+    this.openSpotlightOpened.emit();
+  }
 }

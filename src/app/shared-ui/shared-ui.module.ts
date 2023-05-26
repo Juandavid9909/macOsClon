@@ -7,6 +7,7 @@ import { ProgressBarModule } from "primeng/progressbar";
 import { SidebarModule } from "primeng/sidebar";
 import { TerminalModule } from "primeng/terminal";
 import { ContextMenuModule } from "primeng/contextmenu";
+import { AutoCompleteModule } from "primeng/autocomplete";
 
 @NgModule({
   declarations: [],
@@ -20,7 +21,8 @@ import { ContextMenuModule } from "primeng/contextmenu";
     MenubarModule,
     SidebarModule,
     TerminalModule,
-    ContextMenuModule
+    ContextMenuModule,
+    AutoCompleteModule
   ]
 })
 export class SharedUiModule { }

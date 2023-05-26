@@ -34,6 +34,8 @@ export class WindowService {
 
       case apps.TRASH: return appComponents.TrashComponent;
 
+      case apps.SPOTLIGHT: return appComponents.SpotlightComponent;
+
       default: return null;
     }
   }

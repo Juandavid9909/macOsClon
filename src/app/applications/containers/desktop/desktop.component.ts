@@ -1,6 +1,6 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { filter, mergeMap, Subject, takeUntil } from "rxjs";
-import { DESKTOP } from 'src/app/shared/config/applications';
+import { DESKTOP, SPOTLIGHT } from 'src/app/shared/config/applications';
 import { WindowService } from 'src/app/shared/services/window.service';
 import { Store } from 'src/app/shared/store/store';
 
@@ -29,14 +29,22 @@ export class DesktopComponent implements OnInit, OnDestroy {
           filter(app => app !== DESKTOP),
           mergeMap(app => this.windowService.open(app))
         )
-        .subscribe(_ => this.store.setActiveApplication());
+        .subscribe(app => this.store.setActiveApplication(app));
   }
 
   @HostListener("document:keydown", ["$event"])
   onKeydown(event: KeyboardEvent) {
+    if(event.ctrlKey && event.code === "Space") {
+      return this.openSpotlight();
+    }
+
     if(event.ctrlKey && event.code === "Backspace") {
       this.store.deleteSelectedFolders();
     }
+  }
+
+  openSpotlight() {
+    return this.store.setActiveApplication(SPOTLIGHT);
   }
 
   unselectFolders() {

@@ -1,6 +1,6 @@
 <div #desktop class="desktop-screen" (click)="unselectFolders()">
     <div class="desktop-screen__menu">
-        <app-menu></app-menu>
+        <app-menu (openSpotlightOpened)="openSpotlight()"></app-menu>
     </div>
 
     <div class="desktop-screen__folders">
