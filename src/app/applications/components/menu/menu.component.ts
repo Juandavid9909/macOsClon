@@ -10,6 +10,8 @@ export class MenuComponent {
 
   @Output() openSpotlightOpened = new EventEmitter();
 
+  isSettingsDialogDisplayed = false;
+
   menuItems = [
     {
       label: "Finder",
@@ -37,5 +39,9 @@ export class MenuComponent {
 
   openSpotlight() {
     this.openSpotlightOpened.emit();
+  }
+
+  toggleSettingsDialog() {
+    this.isSettingsDialogDisplayed = !this.isSettingsDialogDisplayed;
   }
 }

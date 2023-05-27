@@ -17,6 +17,7 @@ import { FinderSidebarComponent } from './components/finder-sidebar/finder-sideb
 import { SidebarGroupComponent } from './components/sidebar-group/sidebar-group.component';
 import { SidebarItemComponent } from './components/sidebar-item/sidebar-item.component';
 import { SpotlightComponent } from './containers/spotlight/spotlight.component';
+import { SettingsModule } from './components/settings/settings.module';
 
 const components = [
   DesktopComponent,
@@ -42,7 +43,8 @@ const components = [
   imports: [
     CommonModule,
     ApplicationsRoutingModule,
-    SharedModule
+    SharedModule,
+    SettingsModule
   ]
 })
 export class ApplicationsModule { }

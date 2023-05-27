@@ -8,6 +8,7 @@ import { SidebarModule } from "primeng/sidebar";
 import { TerminalModule } from "primeng/terminal";
 import { ContextMenuModule } from "primeng/contextmenu";
 import { AutoCompleteModule } from "primeng/autocomplete";
+import { DialogModule } from "primeng/dialog";
 
 @NgModule({
   declarations: [],
@@ -22,7 +23,8 @@ import { AutoCompleteModule } from "primeng/autocomplete";
     SidebarModule,
     TerminalModule,
     ContextMenuModule,
-    AutoCompleteModule
+    AutoCompleteModule,
+    DialogModule
   ]
 })
 export class SharedUiModule { }
